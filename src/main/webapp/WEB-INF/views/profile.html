@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:if="${error}">
+    <p>Ban chua dang nhap</p>
+</div>
+<div th:if="!${error}">
+    <h1>Show my profile</h1>
+    <h2 th:text="${user}"></h2>
+    <hr>
+    <a href="/enable" th:text="${enable?'enable':'disable'}"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        .header-title {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1 class="header-title">Register form</h1>
+<form action="/register" method="post">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username"/>
+    <span th:if="${error}==true">Username is exist.</span><br>
+    <label for="password">passwrod</label>
+    <input type="password" id="password" name="password" onchange="checkConfirmPasswrod()"><br>
+    <input type="submit" id="submitRegister" value="Register">
+</form>
+<script>
+    var $username = document.getElementById("username").value;
+    var $password = document.getElementById("password").value;
+    var $confirmPassword = document.getElementById("confirmPassword");
+    var $submitRegister = document.getElementById("submitRegister");
+
+    function checkConfirmPasswrod() {
+        console.log($confirmPassword.value);
+        if ($password.value == $confirmPassword.value) {
+            $submitRegister.setAttribute("disable", false);
+
+        }
+        else $submitRegister.setAttribute("disable", true);
+    }
+
+</script>
+</body>
+</html>

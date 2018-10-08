@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:if="${#session.getAttribute('user')}!=null">
+    <div th:each="user : ${un}">
+        <h3 th:text="@{username : }+${user.key}"></h3>
+        <a th:href="@{/enable/}+${user.key}" th:text="${user.value?'enable':'disable'}"> </a>
+        <hr>
+    </div>
+</div>
+ hello
+<div th:if="${#session.getAttribute('user')}==null">
+    <a href="/login">Sign up</a>
+    <br>
+    <a href="/register">Sign in</a>
+</div>
+</body>
+</html>

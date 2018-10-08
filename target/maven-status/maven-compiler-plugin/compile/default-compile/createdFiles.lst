@@ -1,0 +1,10 @@
+edu/zera/student/manager/services/UserService.class
+edu/zera/student/manager/services/impl/UserServiceImpl.class
+edu/zera/student/manager/config/HibernateConfig.class
+edu/zera/student/manager/controller/AppController.class
+edu/zera/student/manager/dao/UserDAO.class
+edu/zera/student/manager/config/WebMvcConfig.class
+edu/zera/student/manager/dao/impl/UserDAOImpl.class
+edu/zera/student/manager/dao/impl/AbstractDAO.class
+edu/zera/student/manager/model/User.class
+edu/zera/student/manager/config/AppInitializer.class

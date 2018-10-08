@@ -1,0 +1,10 @@
+/home/zera/IdeaProjects/StudentManager0410/src/main/java/edu/zera/student/manager/dao/impl/AbstractDAO.java
+/home/zera/IdeaProjects/StudentManager0410/src/main/java/edu/zera/student/manager/dao/UserDAO.java
+/home/zera/IdeaProjects/StudentManager0410/src/main/java/edu/zera/student/manager/controller/AppController.java
+/home/zera/IdeaProjects/StudentManager0410/src/main/java/edu/zera/student/manager/services/UserService.java
+/home/zera/IdeaProjects/StudentManager0410/src/main/java/edu/zera/student/manager/config/AppInitializer.java
+/home/zera/IdeaProjects/StudentManager0410/src/main/java/edu/zera/student/manager/config/WebMvcConfig.java
+/home/zera/IdeaProjects/StudentManager0410/src/main/java/edu/zera/student/manager/config/HibernateConfig.java
+/home/zera/IdeaProjects/StudentManager0410/src/main/java/edu/zera/student/manager/services/impl/UserServiceImpl.java
+/home/zera/IdeaProjects/StudentManager0410/src/main/java/edu/zera/student/manager/model/User.java
+/home/zera/IdeaProjects/StudentManager0410/src/main/java/edu/zera/student/manager/dao/impl/UserDAOImpl.java
